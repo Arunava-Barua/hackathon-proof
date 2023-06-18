@@ -1,0 +1,512 @@
+{
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_description",
+                    "type": "string"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "_explore",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "_voting",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "_blacklist",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_similarityScore",
+                    "type": "uint256"
+                }
+            ],
+            "name": "addProject",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_id",
+                    "type": "uint256"
+                }
+            ],
+            "name": "downVoteProject",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "stateMutability": "payable",
+            "type": "fallback"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_id",
+                    "type": "uint256"
+                }
+            ],
+            "name": "upVoteProject",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "stateMutability": "payable",
+            "type": "receive"
+        },
+        {
+            "inputs": [],
+            "name": "getBlacklistProjects",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "id",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "owner",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "description",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "explore",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "voting",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "blacklist",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "similarityScore",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "upVotes",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "downVotes",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct ZkHacker.Project[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getCurrentProfileId",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getExploreProjects",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "id",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "owner",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "description",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "explore",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "voting",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "blacklist",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "similarityScore",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "upVotes",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "downVotes",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct ZkHacker.Project[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_id",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getProjectbyId",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "id",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "owner",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "description",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "explore",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "voting",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "blacklist",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "similarityScore",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "upVotes",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "downVotes",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct ZkHacker.Project",
+                    "name": "",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getVotingProjects",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "id",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "owner",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "description",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "explore",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "voting",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "blacklist",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "similarityScore",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "upVotes",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "downVotes",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct ZkHacker.Project[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "projectById",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "explore",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "voting",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "blacklist",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "similarityScore",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "upVotes",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "downVotes",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "projectByUser",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "explore",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "voting",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "blacklist",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "similarityScore",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "upVotes",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "downVotes",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "projects",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "explore",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "voting",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "blacklist",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "similarityScore",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "upVotes",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "downVotes",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+}
